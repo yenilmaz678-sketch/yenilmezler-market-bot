@@ -49,8 +49,32 @@ jobs:
                   },
 
                   {
-                    "name": "🚗 Araç Marketi",
-                    "value": "🚤 Barba — `$15.000`\n🚤 BigRaft — `$15.000`\n🏍 Cruiser — `$27.000`\n🚤 Dinghy — `$15.000`\n🏍 Dirtbike — `$26.000`\n✈ Kinglet Duster — `$100.000`\n✈ Kinglet Mariner — `$130.000`\n🚗 Laika — `$50.000`\n🚜 RIS — `$33.000`\n🚗 Rager — `$75.000`\n🏍 SidecarBike — `$41.000`\n🚜 Tractor — `$42.000`\n🚗 WolfsWagen — `$46.000`",
+                    "name": "🚤 Deniz Araçları",
+                    "value": "🚤 Barba — `$15.000`\n🚤 BigRaft — `$15.000`\n🚤 Dinghy — `$15.000`",
+                    "inline": false
+                  },
+
+                  {
+                    "name": "🏍 Motosikletler",
+                    "value": "🏍 Cruiser — `$27.000`\n🏍 Dirtbike — `$26.000`\n🏍 SidecarBike — `$41.000`",
+                    "inline": false
+                  },
+
+                  {
+                    "name": "🚗 Arabalar",
+                    "value": "🚗 Laika — `$50.000`\n🚗 Rager — `$75.000`\n🚗 WolfsWagen — `$46.000`",
+                    "inline": false
+                  },
+
+                  {
+                    "name": "🚜 Özel Araçlar",
+                    "value": "🚜 RIS — `$33.000`\n🚜 Tractor — `$42.000`",
+                    "inline": false
+                  },
+
+                  {
+                    "name": "✈ Hava Araçları",
+                    "value": "✈ Kinglet Duster — `$100.000`\n✈ Kinglet Mariner — `$130.000`",
                     "inline": false
                   }
 
