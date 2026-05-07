@@ -16,7 +16,6 @@ jobs:
           -X POST \
           -d '{
             "username": "Yenilmezler AVM",
-            "avatar_url": "https://i.imgur.com/4M34hi2.png",
             "embeds": [
               {
                 "title": "🔥 YENILMEZLER PREMIUM MARKET 🔥",
