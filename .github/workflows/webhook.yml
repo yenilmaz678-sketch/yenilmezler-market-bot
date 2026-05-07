@@ -22,14 +22,6 @@ jobs:
                 "description": "💀 SCUM Turkiye Premium Market\n🛒 Guvenli Alisveris • Aktif Market • Hizli Teslimat",
                 "color": 16711680,
 
-                "thumbnail": {
-                  "url": "https://i.imgur.com/NbH0AUG.png"
-                },
-
-                "image": {
-                  "url": "https://i.imgur.com/z9sWw6K.jpeg"
-                },
-
                 "fields": [
 
                   {
@@ -93,4 +85,4 @@ jobs:
                 }
               }
             ]
-          }' https://discord.com/api/webhooks/1502030417983705088/3-9GTBxJoypkSbYYtxX7oe7c8OFf78ey0D5PgdRo80OK6xD0zj4-6FvwtLSelqSgzDd8
+          }'https://discord.com/api/webhooks/1502030417983705088/3-9GTBxJoypkSbYYtxX7oe7c8OFf78ey0D5PgdRo80OK6xD0zj4-6FvwtLSelqSgzDd8
