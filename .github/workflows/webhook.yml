@@ -1,0 +1,64 @@
+name: Yenilmezler AVM Market
+
+on:
+  schedule:
+    - cron: '0 */1 * * *'
+  workflow_dispatch:
+
+jobs:
+  send-market:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send Discord Market Webhook
+        run: |
+          curl -H "Content-Type: application/json" \
+          -X POST \
+          -d '{
+            "username": "Yenilmezler AVM",
+            "embeds": [
+              {
+                "title": "🛒 YENİLMEZLER AVM MARKET",
+                "description": "Aktif market sistemimize hoşgeldiniz.\nSilah • Araç • Medikal • İnşaat Marketi",
+                "color": 16724787,
+
+                "fields": [
+
+                  {
+                    "name": "🔫 Silah Setleri",
+                    "value": "🔸 AKM SET — `$25.000`\n• AKM\n• 3x Cal 7.62x39\n• 2x AKM Magazine\n• Scope Rail\n• Suppressor\n• Sight\n\n🔸 M1 Snip SET — `$35.000`\n• Weapon M1\n• 2x M1 Clip\n• 2x Cal 30-06\n• Improvised Rifle Rail\n• Suppressor\n• Scope\n\n🔸 MP5 SET — `$15.000`\n• MP5\n• MP5 Rail\n• 2x MP5 Magazine\n• Sight\n• 2x Cal 9mm",
+                    "inline": false
+                  },
+
+                  {
+                    "name": "🛡 Zırh Setleri",
+                    "value": "🔸 ARMOR SET — `$5.000`\n• K6-3 Helmet\n• Bulletproof Vest",
+                    "inline": false
+                  },
+
+                  {
+                    "name": "💊 Medikal",
+                    "value": "🔸 Medical Kit — `$3.000`\n• 5x Emergency Bandage\n• 2x Antibiotics\n• 2x Painkillers\n• 2x Vitamins",
+                    "inline": false
+                  },
+
+                  {
+                    "name": "🧱 İnşaat & Gear",
+                    "value": "🔸 Balyoz — `$1.500`\n🔸 Base Kit — `$5.000`\n• 4 Item\n\n🔸 Büyük Toolbox — `$2.500`\n🔸 Cıvata — `$2.000`\n🔸 Kütük — `$5.000`\n🔸 Kürek — `$1.000`\n🔸 Sandbag — `$5.000`\n🔸 Tuğla — `$15.000`\n🔸 Çimento — `$15.000`\n🔸 Çakıl — `$15.000`\n🔸 Çivi — `$2.000`",
+                    "inline": false
+                  },
+
+                  {
+                    "name": "🚗 Araç Marketi",
+                    "value": "🚤 Barba — `$15.000`\n🚤 BigRaft — `$15.000`\n🏍 Cruiser — `$27.000`\n🚤 Dinghy — `$15.000`\n🏍 Dirtbike — `$26.000`\n✈ Kinglet Duster — `$100.000`\n✈ Kinglet Mariner — `$130.000`\n🚗 Laika — `$50.000`\n🚜 RIS — `$33.000`\n🚗 Rager — `$75.000`\n🏍 SidecarBike — `$41.000`\n🚜 Tractor — `$42.000`\n🚗 WolfsWagen — `$46.000`",
+                    "inline": false
+                  }
+
+                ],
+
+                "footer": {
+                  "text": "Yenilmezler SCUM Server • Aktif Ekonomi Sistemi"
+                }
+              }
+            ]
+          }' https://discord.com/api/webhooks/1502030417983705088/3-9GTBxJoypkSbYYtxX7oe7c8OFf78ey0D5PgdRo80OK6xD0zj4-6FvwtLSelqSgzDd8
